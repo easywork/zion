@@ -5,11 +5,21 @@ public class FirewallRule {
 
 	private String sectionId;
 //	private String applyTo; 
-	private long ruleId;
+	private int ruleId;
 	private String name;
 	private String action;
 	
-	public String getId() {
+	public FirewallRule(){
+	}
+	
+	public FirewallRule(String sectionId, int ruleId, String name, String action){
+		this.sectionId = sectionId;
+		this.ruleId = ruleId;
+		this.name = name;
+		this.action = action;
+	}
+	
+	public String getSectionId() {
 		return sectionId;
 	}
 	
@@ -17,11 +27,11 @@ public class FirewallRule {
 		this.sectionId = id;
 	}
 	
-	public long getRuleId() {
+	public int getRuleId() {
 		return ruleId;
 	}
 	
-	public void setRuleId(long ruleId) {
+	public void setRuleId(int ruleId) {
 		this.ruleId = ruleId;
 	}
 	

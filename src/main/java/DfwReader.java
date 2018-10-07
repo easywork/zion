@@ -94,7 +94,7 @@ public class DfwReader {
 						if (rule.getNodeType() == Node.ELEMENT_NODE) {
 							
 							Element x = (Element) rule;
-							long ruleId = Long.valueOf(x.getAttribute("id"));
+							int ruleId = Integer.valueOf(x.getAttribute("id"));
 							String name = x.getElementsByTagName("name").item(0).getTextContent();
 							String action = x.getElementsByTagName("action").item(0).getTextContent();
 							
