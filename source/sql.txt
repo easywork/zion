@@ -1,0 +1,11 @@
+
+create database dfw_rules;
+\c dfw_rules;
+create schema test1;
+
+CREATE TABLE test1.firewall_rules (
+    id int primary key,
+    section varchar(20) NOT NULL,
+    name varchar(20) NOT NULL,
+    action  varchar(20) NOT NULL,
+);
