@@ -96,6 +96,9 @@ Create a folder structure in eclipse without maven
 Install pydev
 * http://codingtip.blogspot.com/2012/04/how-to-install-eclipse-and-pydev-for.html
 * http://pydev.org/updates 
+* If the pydev is not compatible, it needs to find out right version for the eclipse, for example eclipse3.8 work with pydev4.5.5
+* The pydev versions can be found on this link, copy to the installation URL: pydev - pydev - http://www.pydev.org/update_sites/4.5.5/
+http://www.pydev.org/update_sites/
 
 
 =========================================================================================
