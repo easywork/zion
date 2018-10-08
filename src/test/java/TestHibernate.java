@@ -34,13 +34,13 @@ public static void main(String[] args) {
       th.listRules();
       
       /* update the rule with a different action*/
-      // th.updateRule(1001, "doNothing");
+      th.updateRule(1001, "doNothing");
       
       /* List down the rules*/
-      // th.listRules();
+      th.listRules();
       
       /* delete the rule*/
-      // th.deleteRule(1001);
+      th.deleteRule(1001);
       
    }
    
@@ -75,7 +75,7 @@ public static void main(String[] args) {
          List employees = session.createQuery("FROM FirewallRule").list(); 
          for (Iterator iterator = employees.iterator(); iterator.hasNext();){
             FirewallRule rule = (FirewallRule) iterator.next(); 
-            System.out.print(rule); 
+            System.out.println(rule); 
          }
          tx.commit();
       } catch (HibernateException e) {
